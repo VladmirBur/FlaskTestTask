@@ -3,9 +3,9 @@ from flask import render_template
 
 @app.route("/index")
 @app.route("/")
-def index():
+def Render_DefaultPage():
     return("This is a dummy page, LOL.")
 
 @app.route("/page_1")
-def Page1():
+def Render_FirstTestPage():
     return render_template("page1.html")
